@@ -1,0 +1,43 @@
+﻿.animate-hide {
+ -webkit-transition:all 0.5s;
+    -moz-transition:all 0.5s;
+    -o-transition:all 0.5s;
+    transition:all 0.5s;
+  opacity:1;
+  position: absolute;
+  left:0;
+}
+
+.animate-hide.ng-hide {
+  left: -100%;
+  opacity:0;
+}
+
+
+#calcContainer {
+    min-width:30vw;
+    position: fixed;
+    left: 50%;
+    top:50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+    #calcContainer > .col-sm-8 {
+        text-align:center;
+    }
+
+
+.navArrow {
+    font-size:3em; 
+    margin:2vh 0;
+    z-index:999999;
+}
+
+    .navArrow:hover {
+        opacity:0.5;
+        cursor:pointer;
+    }
