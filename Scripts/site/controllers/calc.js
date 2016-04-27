@@ -33,7 +33,7 @@
                     if ($scope.debt == null)
                         setError();
                     else
-                        $scope.suggestedCover = $scope.formatCurrency($scope.getSuggestedCover());
+                        $scope.suggestedCover = $scope.getSuggestedCover();
                     break;
             }
 

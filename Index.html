@@ -69,10 +69,14 @@
                     </div>
 
                     <div ng-show="currentStep == 4" class="animate-hide" style="display:inline-block !important; width:100%;">
-                        <dl>
+                        <dl ng-show="suggestedCover < 1000000 && suggestedCover > 50000">
                             <dt>Suggested cover</dt>
-                            <dd>{{suggestedCover}}</dd>
+                            <dd>{{formatCurrency(suggestedCover)}}</dd>
                         </dl>
+
+                        <p ng-hide="suggestedCover < 1000000 && suggestedCover > 50000">
+                            Sorry but we are not able to provide cover to you at this time.
+                        </p>
 
                         <div>Cover based on your responses:</div>
                         <div ng-show="hasRent">{{formatCurrency(rentAmount)}} monthly rent.</div>
