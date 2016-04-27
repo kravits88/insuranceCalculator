@@ -1,5 +1,5 @@
 ﻿define([], function () {
-    var controller = function ($scope) {
+    var controller = function ($scope, $timeout) {
         
         $scope.currentStep = 1;
         $scope.hasMortgage = false;
@@ -70,6 +70,6 @@
 
     };
 
-    controller.$inject = ['$scope'];
+    controller.$inject = ['$scope', '$timeout'];
     return controller;
 });

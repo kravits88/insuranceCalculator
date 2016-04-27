@@ -10,7 +10,7 @@
     <link href="Content/main.css" rel="stylesheet" />
 
 </head>
-<body ng-app="calcApp">
+<body ng-app="calcApp" ng-cloak>
 
 
     <div id="calcContainer" class="row" ng-controller="calcController">
@@ -27,12 +27,11 @@
 
                 <div class="col-sm-8">
 
-
                     <div ng-show="currentStep == 1 && !hasRent && !hasMortgage" class="animate-hide" style="display:inline-block !important; width:100%;">
                         <div class="form-group">
                             <label for="rentOrMortgage">Do you rent or pay mortgage?</label>
                             <div class="btn btn-default" ng-click="hasRent = true">Rent</div>
-                            <div class="btn btn-default" ng-click="hasMortgage = true">Mortage</div>
+                            <div class="btn btn-default" ng-click="hasMortgage = true">Mortgage</div>
                         </div>
                     </div>
 
